@@ -1,0 +1,29 @@
+body {
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+}
+.restaurant {
+	width: 400px;
+	font-size: 13px !important;
+	float: left;
+	border: 1px solid #456;
+	margin: 10px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #ccc;
+}
+.restaurant h2 {
+	margin: 0;
+	padding: 10px 20px;
+	background: #456;
+	color: #fff;
+}
+#meta {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 3px 5px;
+	font-size: 10px;
+	color: #444;
+	background: #ddd;
+}
