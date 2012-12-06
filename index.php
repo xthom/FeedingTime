@@ -1,9 +1,5 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('error_reporting', E_ALL);
-ini_set('display_errors','On');
-
 header("content-type: text/html; charset=utf-8");
 
 include 'config.php';
@@ -41,6 +37,10 @@ if ($cache && isset($lastcached) && $lastcached > (time() - 3600)) {
 
 	$cachedContent = $content;
 	$lastcached = time();
+	if (!is_file("cached.php")) {
+		touch("cached.php");
+		chmod("cached.php", 0777);
+	}
 	$file = fopen("cached.php", "w");
 	fwrite($file, "<?" . "php\n\n\$lastcached = $lastcached;\n\n\$cachedContent = <<<BLAHBLAH\n " . $cachedContent . "\nBLAHBLAH;\n");
 	fclose($file);
