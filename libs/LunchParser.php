@@ -24,13 +24,19 @@ class LunchParser
 	
 	public function getParsedMenu($feed)
 	{
-		if (empty($this->lunchMenu) || empty($this->lunchTitle)) {
-			$this->parse($feed);
-		}
-		return array(
+		$this->resetMenu();
+		$this->parse($feed);
+		$return = array(
 			'title' => $this->lunchTitle,
 			'menu' => $this->lunchMenu
 		);
+		return $return;
+	}
+	
+	public function resetMenu()
+	{
+		$this->lunchMenu = NULL;
+		$this->lunchTitle = NULL;
 	}
 	
 }
