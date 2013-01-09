@@ -34,6 +34,11 @@ $feeds = array(
 		"type" => "neklid",
 		"title" => "Neklid",
 		"url" => "http://www.neklid.com/generovane_html/dennimenutisk.html"
+	),
+	array(
+		"type" => "lunchtime",
+		"title" => "HamTam",
+		"url" => "http://www.lunchtime.cz/rss/?id=3594&type=restaurant"
 	)
 );
 
