@@ -7,6 +7,8 @@ include 'simple_html_dom.php';
 
 define("APPDIR", __DIR__ . DIRECTORY_SEPARATOR);
 
+$force = isset($_GET['force']);
+
 ?><!DOCTYPE HTML>
 <html>
     <head>
@@ -19,7 +21,7 @@ define("APPDIR", __DIR__ . DIRECTORY_SEPARATOR);
 
 include 'cached.php';
 
-if ($cache && isset($lastcached) && $lastcached > (time() - 3600)) {
+if ($cache && isset($lastcached) && $lastcached > (time() - 3600) && !$force) {
 	$content = $cachedContent;
 	echo "<p id='meta'>cached @ " . date("r", $lastcached) . "</p>";
 } else {
