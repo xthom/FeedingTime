@@ -17,11 +17,6 @@ $cache = TRUE;
 $feeds = array(
 	array(
 		"type" => "lunchtime",
-		"title" => "U Palečka",
-		"url" => "http://www.lunchtime.cz/rss/?id=4971&type=restaurant"
-	),
-	array(
-		"type" => "lunchtime",
 		"title" => "Obyčejný svět",
 		"url" => "http://www.lunchtime.cz/rss/?id=1444&type=restaurant"
 	),
@@ -36,10 +31,20 @@ $feeds = array(
 		"url" => "http://www.neklid.com/generovane_html/dennimenutisk.html"
 	),
 	array(
+		"type" => "jinakrajina",
+		"title" => "Jiná Krajina",
+		"url" => "http://kodanska.jinakrajina.cz/cs/denni-nabidka/"
+	),
+	array(
 		"type" => "lunchtime",
-		"title" => "HamTam",
-		"url" => "http://www.lunchtime.cz/rss/?id=3594&type=restaurant"
+		"title" => "U Palečka",
+		"url" => "http://www.lunchtime.cz/rss/?id=4971&type=restaurant"
 	)
+	// array(
+	// 	"type" => "lunchtime",
+	// 	"title" => "HamTam",
+	// 	"url" => "http://www.lunchtime.cz/rss/?id=3594&type=restaurant"
+	// )
 );
 
 

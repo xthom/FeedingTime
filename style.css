@@ -19,7 +19,7 @@ body {
 	color: #fff;
 }
 #meta {
-	position: absolute;
+	position: fixed;
 	right: 0;
 	bottom: 0;
 	padding: 3px 5px;
